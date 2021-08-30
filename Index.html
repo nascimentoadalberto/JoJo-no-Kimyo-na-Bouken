@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>JoJo no Kimyo na Bouken - Protagonistas</title>
+</head>
+
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <img id="logo" src="assets/img/logo.png">
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="assets/img/jonathan.jpg">
+        </div>
+        <div class="content">
+            <h2>Jonathan Joestar<br><span>Phantom Blood</span></h2>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="assets/img/joseph.jpg">
+        </div>
+        <div class="content">
+            <h2>Joseph Joestar<br><span>Battle Tendency</span></h2>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="assets/img/jotaro.jpg">
+        </div>
+        <div class="content">
+            <h2>Jotaro Kujo<br><span>Stardust Crusaders</span></h2>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="assets/img/josuke.jpg">
+        </div>
+        <div class="content">
+            <h2>Josuke Higashikata<br><span>Diamond is Unbreakable</span></h2>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="assets/img/giorno.jpg">
+        </div>
+        <div class="content">
+            <h2>Giorno Giovanna<br><span>Golden Wind</span></h2>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="imgBx">
+            <img src="assets/img/jolyne.jpg">
+        </div>
+        <div class="content">
+            <h2>Jolyne Cujoh<br><span>Stone Ocean</span></h2>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+</script>
