@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Index.css">
-    <title>JoJo no Kimyo na Bouken - Protagonistas</title>
+    <title>JoJo no Kimyo na Bouken</title>
 </head>
 
 <body>
@@ -67,14 +67,15 @@
             <h2>Jolyne Cujoh<br><span>Stone Ocean</span></h2>
         </div>
     </div>
+
+    <div id="box">
+        <div id="imgBx">
+            <img src="assets/img/all characters.jpeg">
+        </div>
+        <div id="content">
+            <h2>JoJo's Bizarre Adventure<br><span>All main characters, from parts 1 to 6</span></h2>
+        </div>
+    </div>
 </body>
 </html>
-
-<script>
-    let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function(){
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + "%";
-    }
-</script>
+<script src="Index.js"></script>
